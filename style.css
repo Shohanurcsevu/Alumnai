@@ -1,0 +1,1086 @@
+/**
+* Author : Pranto kuamr
+* Theme Name: Vesta || Startup and Agency Bootstrap-3.3.7 Template
+* Version: 1.0.0
+*/
+
+/*-----------------------------------
+    Google Font
+-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Bungee|Roboto:400,400i,700,700i,900');
+/*-----------------------------------
+    Default CSS
+-------------------------------------*/
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    font-family: Bungee
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-family: Bungee
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    letter-spacing: 1.2px;
+    line-height: 22px;
+}
+.margin-top{
+    margin-top: 40px;
+}
+.margin-bottom{
+    margin-bottom: 40px
+}
+.margin-both{
+    margin: 40px 0px
+}
+
+.padding-top{
+    padding-top: 40px;
+}
+.padding-bottom{
+    padding-bottom: 40px
+}
+.padding-both{
+    padding: 40px 0px
+}
+
+.clear{
+    clear: both
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-family: roboto
+}
+a:hover{
+    text-decoration: none
+}
+a:visited{
+    text-decoration: none
+}
+a:focus{
+    text-decoration: none
+}
+i{
+    font-weight: 700;
+    margin-right: 5px
+}
+img{
+    width: 100%
+}
+.table{
+    margin-bottom: 0
+}
+.default-btn {
+    background: #56CCF2;
+    border: 0 none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 900;
+    margin: 10px 0;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: 0.4s all  ease-in-out
+}
+
+/*-----------------------------------
+01. Header CSS
+-------------------------------------*/
+header.v-header-area-start {
+    color: #fff;
+    font-weight: 700;
+    padding: 7px 0
+}
+.v-header-left.pull-left > span {
+    margin-right: 20px
+}
+.v-header-right.pull-right > span {
+    margin-left: 20px
+}
+.v-header-right.pull-right a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff
+}
+.v-header-right.pull-right span{
+    margin: 10px
+}
+
+/*-----------------------------------
+02. Nav(Main-menu) CSS
+-------------------------------------*/
+nav {
+    box-shadow: 1px 3px 8px 0 #dddddd;
+}
+.v-logo-area {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.v-logo-area::before {
+    background: #18dcff none repeat scroll 0 0;
+    content: "";
+    height: 87%;
+    left: -10%;
+    opacity: 0.22;
+    position: absolute;
+    top: 85%;
+    transform: rotate(25deg);
+    width: 86%;
+    z-index: -9;
+}
+.v-logo-area a.v-logo {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.v-menu-area{
+    text-align: right;
+    overflow: hidden;
+    position: relative;
+}
+.v-logo > img {
+    width: 120px;
+}
+.v-menu-area::before {
+    background: #18dcff none repeat scroll 0 0;
+    content: "";
+    height: 184%;
+    left: 28%;
+    opacity: 0.22;
+    position: absolute;
+    top: 101%;
+    transform: rotate(7deg);
+    width: 100%;
+    z-index: -9;
+}
+.v-menu-area ul li {
+    display: inline
+}
+.v-menu-area ul li a {
+    display: inline-block;
+}
+.v-menu-area ul li a {
+    color: #999;
+    display: inline-block;
+    font-weight: 700;
+    padding: 15px 18px;
+    text-transform: uppercase;
+    transition: 0.2s ease-in
+}
+.v-menu-area ul li a:hover{
+    color: #fff
+}
+
+/*-----------------------------------
+03. Slider CSS
+-------------------------------------*/
+.v-slider-area-start, .v-single-slider{
+    width: 100%;
+    height: 90vh;
+    position: relative
+}
+.v-single-slider:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    content:'';
+    z-index: -9
+}
+.v-single-slider {
+    display: table;
+    z-index: 9
+}
+.v-slider-content {
+    display: table-cell;
+    height: 100%;
+    padding-left: 10%;
+    vertical-align: middle;
+    width: 60%
+}
+.v-slider-content h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color:#fff
+}
+.v-slider-content p {
+    font-size: 21px;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+    color:#fff
+}
+.v-slider-active .owl-nav{
+    margin-top: 0
+}
+.v-slider-active .owl-nav div{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    background:none
+}
+.v-slider-active .owl-nav div.owl-prev{
+    background: none;
+    font-size: 60px;
+    font-weight: 400
+}
+.v-slider-active .owl-nav div.owl-next{
+    left: auto;
+    right: 20px;
+    border-right: 0;
+    background: none;
+    font-size: 60px;
+    font-weight: 400
+}
+.v-slider-active .owl-nav div.owl-prev:hover, .v-slider-active .owl-nav div.owl-next:hover{
+    background: none
+    
+} 
+/*-----------------------------------
+04. Purchase CSS
+-------------------------------------*/
+.v-purchase-area-start {
+    color: #fff
+}
+.purchase-contact h2 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 10px;
+    text-transform: uppercase
+}
+.purchase-btn a {
+    border: 1px solid #fff
+}
+
+/*-----------------------------------
+05. Project Title CSS
+-------------------------------------*/
+.v-hipe-title strong {
+    display: block;
+    font-size: 33px;
+    font-weight: 900;
+    margin-bottom: -26px;
+    opacity: 0.09;
+    text-transform: uppercase;
+}
+.v-title > h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 5px
+    border-bottom: 2px solid #18dcff
+}
+
+/*-----------------------------------
+06. About CSS
+-------------------------------------*/
+.about-area {
+    display: table
+}
+.about-img img {
+    height: 350px;
+    margin-top: 107px;
+    width: 100%;
+}
+.about-content {
+    display: table-cell;
+    height: 600px;
+    padding-left: 20px;
+    position: relative;
+    vertical-align: middle;
+    overflow: hidden
+}
+.about-content::after {
+    background: #18dcff none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    transform: skewX(114deg);
+    width: 100%;
+    z-index: -9;
+}
+.about-content > h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase
+}
+.about-content > p {
+    margin-bottom: 20px;
+    line-height: 32px
+}
+.about-content ul li {
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    padding-bottom: 15px;
+}
+.about-content ul li i {
+    font-size: 16px;
+}
+
+/*-----------------------------------
+07. Services CSS
+-------------------------------------*/
+.v-services-description > h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+.v-services-description > p {
+    line-height: 32px;
+    margin-bottom: 20px
+}
+.v-services-img img{
+    margin-top: 75px;
+    height: 450px;
+    width: 100%
+}
+.single-chart canvas {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.single-chart .labelContainer {
+    display: inline-block;
+    margin-bottom: 26px;
+    width: 0;
+}
+.single-chart .labelPercentage{
+    position: absolute;
+    top: -18px;
+    left: -28px
+}
+.single-chart .labelLink {
+    font-size: 30px;
+}
+.single-chart .labelText {
+    display: none;
+}
+
+/*-----------------------------------
+08. Counter CSS
+-------------------------------------*/
+.v-counter-area-start {
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1
+}
+.v-counter-area .single-counter span.counter, .v-counter-area .single-counter span.plus{
+    font-size: 50px
+}
+.single-counter h4{
+    font-family: roboto;
+    font-weight: 900;
+    letter-spacing: 1.20px
+}
+
+/*-----------------------------------
+09. Pricine Table CSS
+-------------------------------------*/
+.v-single-head-first > img {
+    height: 282px;
+    width: 100%;
+}
+.v-single-head-first {
+    float: left;
+    height: 1px;
+    width: 27.2%;
+}
+.v-price-head-content {
+    float: left;
+    width: 72.8%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Roboto
+}
+.v-single-head {
+    float: left;
+    text-align: center;
+    width: 33.3%
+}
+.v-price-table table{
+    position: relative
+}
+.v-single-head.color-deep{
+    background: #17C0F1
+}
+.v-single-head strong{
+    display: block;
+    font-size: 35px;
+    margin: 0;
+
+}
+.v-single-head strong.cross{
+    text-decoration: line-through;
+    font-size: 25px
+}
+.v-single-head .default-btn{
+    border: 1px solid #fff
+}
+.times-color{
+    color: #EE5857
+}
+
+/*-----------------------------------
+10. Help Area CSS
+-------------------------------------*/
+.v-help-area-start {
+    display: table;
+    height: 300px;
+    width: 100%;
+}
+.v-help-area {
+    display: table-cell;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.v-help-area h1 {
+    color: #fff;
+    font-family: Bungee;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.v-help-area p{
+    width: 60%;
+    margin: auto;
+    line-height: 32px
+}
+.v-help-area a{
+    border: 1px solid #fff
+}
+
+
+
+
+/*-----------------------------------
+    Footer CSS
+-------------------------------------*/
+footer.footer-area-start {
+    padding: 40px 0;
+}
+.single-footer > h2 {
+    color: #fff;
+    font-family: Bungee;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.single-footer > p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.single-footer > a {
+    border: 3px solid #fff;
+    border-radius: 72%;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    margin-right: 10px;
+    padding: 7px 12px;
+    width: 40px;
+    transition: 0.2s ease-in
+}
+.single-footer > a:hover{
+    background: #fff
+}
+.links a {
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+    text-transform: capitalize;
+}
+.single-footer form input {
+    border: 0 none;
+    border-radius: 20px;
+    padding: 7px 20px;
+    width: 73%;
+}
+.single-footer form button {
+    background: rgba(0, 0, 0, 0) linear-gradient(to left, #17c0eb, #18dcff) repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: -65px;
+    padding: 6px 20px;
+    text-transform: uppercase;
+}
+.single-footer form button:hover{
+    background:  rgba(0, 0, 0, 0) linear-gradient(to right, #17c0eb, #18dcff) repeat scroll 0 0;
+}
+.copy-right-area{
+    border-top: 1px solid #ddd;
+    padding: 20px 0px;
+    color: #fff
+}
+/*-----------------------------------
+Login CSS
+-------------------------------------*/
+
+.login2-area, .sing1-area {
+    height: auto;
+    width: 100%;
+}
+.login2-bg, .login2-form-text, .sing1-form-bg, .sign1-form, .sign2-form, .sign2-bg-img {
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+.login2-bg-img, .sign1-img{
+    display: table-cell;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.login2-middle, .sign1-middle, .sign2-form-text, .sign2-img {
+    display: table-cell;
+    font-family: lora;
+    height: 100vh;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+.login2-middle h2, .sign1-text h2 {
+    font-family: "Bungee", serif;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+}
+.login2-middle p, .sign1-text p {
+    letter-spacing: 1.1px;
+    text-transform: capitalize;
+}
+.login2-form, .sign1-form-text {
+    margin-top: 30px;
+}
+.login2-form form input, .sign1-form-text form input, .sign2-form-text form input, .sign1-form-text form select#department_name {
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 22px;
+    -webkit-border-radius:22px;
+    -webkit-appearance: none;
+    box-shadow: rgba(255, 255, 255, 0.3) 0 2px 3px inset, rgba(0, 0, 0, 0.3) 0 -2px 3px inset, rgba(255, 255, 255, 0.9) 0 1px 1px;
+    display: block;
+    margin-bottom: 25px;
+    padding: 14px 20px;
+    width: 100%;
+    background: #fff;
+}
+/* hide number field arrows start */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/* hide number field arrows end */
+.login2-form form input:hover, .sign1-form-text form input:hover, .sign2-form-text form input:hover, .sign1-form-text form select#department_name:hover{
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+}
+.login2-form form input[type="checkbox"], .sign1-form-text input[type="checkbox"], .sign2-form-text input[type="checkbox"] {
+    display: inline-block;
+    width: 10px;
+    -webkit-appearance:checkbox;
+}
+.login2-form button[type="submit"], .sign1-form-text button[type="submit"], .sign2-form-text button[type="submit"] {
+    background: #56CCF2;
+    border: 0 none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-weight: 900;
+    margin: 0 0 20px;
+    padding: 10px 57px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out 0s;
+}
+.login2-form button[type="submit"]:hover, .sign1-form-text button[type="submit"]:hover, .sign2-form-text button[type="submit"]:hover{
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08);
+}
+
+/*-----------------------------------
+Message(Page) CSS
+-------------------------------------*/
+.mes-table form{
+    margin-bottom: 40px
+}
+.table img {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+/*-----------------------------------
+MsgSend(Page) CSS
+-------------------------------------*/
+.msg-bio-img{
+    width: 100%;
+    position: relative;
+}
+.msg-bio-img::after {
+    content: "About";
+    font-size: 143px;
+    height: 50px;
+    opacity: 0.1;
+    position: absolute;
+    right: 53px;
+    text-transform: uppercase;
+    top: 21px;
+    transform: skewY(26deg);
+    width: 150px;
+}
+.msg-bio-img img {
+    height: 450px;
+    width: 350px;
+}
+.msg-biography h1, .msg-biography h4 {
+    font-family: roboto;
+    margin-bottom: 4px;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+ul.about-list {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0;
+    list-style: inside none disc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.about-list > li {
+    color: #888;
+    letter-spacing: 1.1px;
+    padding: 5px 10px;
+}
+.msg-biography > a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    box-shadow: 1px 2px 8px 0 #999;
+    height: 40px;
+    margin-right: 10px;
+    padding: 11px 14px;
+    width: 40px;
+    transition: 0.3s ease-in-out
+}
+.msg-biography > a:hover{
+    color: #fff
+}
+/*-----------------------------------
+Profile(Page) CSS
+-------------------------------------*/
+.v-profile-area{
+    height: 90vh;
+    width: 30%;
+    float: left;
+    padding: 20px 20px 10px 30px
+}
+.v-profile-bio{
+    float: left;
+    width: 70%;
+    height: auto
+}
+.v-profile-area > a {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 45px;
+    opacity: 0.69;
+    text-transform: capitalize;
+}
+.profile-menu{
+    margin-top: 20px
+}
+.v-profile-area .profile-menu a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out
+}
+.profile-menu a:hover{
+    background: #fff
+}
+.v-pro-img {
+    border: 20px solid #18dcff;
+    border-left: none;
+    height: 350px;
+    left: 18%;
+    position: absolute;
+    top: 30vh;
+    width: 300px;
+}
+.v-pro-img img {
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+.v-pro-details {
+    margin: 80px auto 0;
+    width: 60%;
+}
+.v-pro-details h1 {
+    font-family: roboto;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.v-pro-details p {
+    color: #888;
+    font-size: 15px;
+    line-height: 23px;
+    margin: 10px 0 10px 10px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.pro-boi-data{
+    margin: 20px 0px
+}
+.pro-boi-data > li {
+    display: inline-block;
+    font-family: Roboto;
+    padding: 5px;
+    width: 49%;
+}
+.pro-boi-data strong {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.edit-form input.file-pic {
+    display: none;
+}
+.edit-form input {
+    margin-bottom: 10px
+}
+.edit-form img {
+    border-radius: 50%;
+    height: 78px;
+    width: 78px;
+}
+
+.modal-dialog.modal-lg.msg-form {
+    padding: 70px;
+}
+.modal-content.padding-both > form {
+    padding: 40px;
+}
+.msg-form form input {
+    margin-bottom: 20px;
+}
+/*-----------------------------------
+    Default Color
+-------------------------------------*/
+.color, .v-logo-area a.v-logo, .text-color, .v-title h1, .about-content > h1, .about-content ul li i, .v-services-description > h1, .single-chart .labelLink, .v-counter-area-start, .check-color, .single-footer > a:hover{
+    color: #18dcff
+}
+
+
+/*-----------------------------------
+    Default Background
+-------------------------------------*/
+.v-profile-area, .bg-primary, header.v-header-area-start, .v-purchase-area-start, .v-title > h1:after, .v-single-head, .v-help-area-start, footer.footer-area-start, .copy-right-area {
+    background: #18dcff none repeat scroll 0 0
+}
+
+
+/*-----------------------------------
+    Default Hover Color
+-------------------------------------*/
+.profile-menu a:hover, .v-menu-area ul li a:hover, .v-slider-active .owl-nav div.owl-prev:hover, .v-slider-active .owl-nav div.owl-next:hover{
+    color: #17c0eb
+}
+
+
+/*-----------------------------------
+    Default Hover Background
+-------------------------------------*/
+.msg-biography > a:hover{
+    background: #18dcff none repeat scroll 0 0
+}
+
+
+
+
+
+
+
+
+/*Color
+linear-gradient(to right, #2F80ED, #56CCF2)
+color: #2F80ED
+bg:  #56CCF2
+
+*/
+
+
+
+/*
+ Custom Blogs page styles
+*/
+.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-color: #868e96;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+}
+.site-heading{
+    text-align: center;
+    padding:200px 0;
+}
+.site-heading h1{
+    font-size: 80px;
+}
+.site-heading .subheading{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+}
+.mx-auto{
+    margin-left;auto;
+    margin-right:auto;
+}
+.post-preview>a {
+    color:#212529;
+    transition: all .2s;
+    text-decoration: none;
+}
+.post-preview>a:hover {
+    color:#0085a1;
+}
+.post-title{
+    font-size: 38px;
+    margin-top: 30px;
+    margin-bottom:10px; 
+}
+.post-preview>a>.post-subtitle{
+    font-weight: 300;
+    margin: 0 0 10px;
+    font-size:28px;
+}
+.post-preview>.post-meta{
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: #868e96;  
+}
+.custom-button{
+    color: #fff;
+    background-color: #0085a1;
+    border-color: #0085a1;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 15px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    float:right;
+}
+.custom-button:hover{
+    color:#fff;
+    background-color: #00657b!important;
+    border-color: #00657b!important;
+}
+
+/* messages page style */
+.messages ul.profile-menu li{
+    margin-bottom:5px;
+}
+.messages ul.profile-menu li a{
+    display: block;
+    background: #fff;
+    color:#17c0eb;
+}
+.messages ul.profile-menu li a:hover{
+    background: #fdf7f7;
+    color: #008baf;
+}
+.messages ul.profile-menu li a.unread{
+    background: #a2a2ad!important;
+    color:#fff;
+}
+
+/* bootsnipp chat css*/
+ .container{max-width:1170px; margin:auto;}
+img{ max-width:100%;}
+.inbox_people {
+  background: #f8f8f8 none repeat scroll 0 0;
+  float: left;
+  overflow: hidden;
+  width: 40%; border-right:1px solid #c4c4c4;
+}
+.inbox_msg {
+  border: 1px solid #c4c4c4;
+  clear: both;
+  overflow: hidden;
+}
+.top_spac{ margin: 20px 0 0;}
+
+
+.recent_heading {float: left; width:40%;}
+.srch_bar {
+  display: inline-block;
+  text-align: right;
+  width: 60%; padding:
+}
+.headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
+
+.recent_heading h4 {
+  color: #05728f;
+  font-size: 21px;
+  margin: auto;
+}
+.srch_bar input{ border:1px solid #cdcdcd; border-width:0 0 1px 0; width:80%; padding:2px 0 4px 6px; background:none;}
+.srch_bar .input-group-addon button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  padding: 0;
+  color: #707070;
+  font-size: 18px;
+}
+.srch_bar .input-group-addon { margin: 0 0 0 -27px;}
+
+.chat_ib h5{ font-size:15px; color:#464646; margin:0 0 8px 0;}
+.chat_ib h5 span{ font-size:13px; float:right;}
+.chat_ib p{ font-size:14px; color:#989898; margin:auto}
+.chat_img {
+  float: left;
+  width: 11%;
+}
+.chat_ib {
+  float: left;
+  padding: 0 0 0 15px;
+  width: 88%;
+}
+
+.chat_people{ overflow:hidden; clear:both;}
+.chat_list {
+  border-bottom: 1px solid #c4c4c4;
+  margin: 0;
+  padding: 18px 16px 10px;
+}
+.inbox_chat { height: 562px; overflow-y: scroll;}
+
+.active_chat{ background:#ebebeb;}
+.active_visible{ background:#fdfdfd;}
+
+.incoming_msg_img {
+  display: inline-block;
+  width: 6%;
+}
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 92%;
+ }
+ .received_withd_msg p {
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+.incoming_msg .time_date {
+  color: #747474;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+.received_withd_msg { width: 57%;}
+.mesgs {
+  float: left;
+  padding: 30px 15px 0 25px;
+  width: 60%;
+}
+
+ .sent_msg p {
+  background: #05728f none repeat scroll 0 0;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0; color:#fff;
+  padding: 5px 10px 5px 12px;
+  width:100%;
+}
+.outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+.sent_msg {
+  float: right;
+  text-align: right;
+  width: 46%;
+}
+.outgoing_msg .time_date {
+  color: #cccaca;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+.input_msg_write input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+}
+
+.type_msg {border-top: 1px solid #c4c4c4;position: relative;margin:5px 0;}
+.msg_send_btn {
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 33px;
+}
+.messaging { padding: 0 0 50px 0;}
+#msg_history {
+  height: 516px;
+  overflow-y: scroll;
+}
+.status-active{
+    height:15px;
+    width: 15px;
+    background:#0d9c04;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #0d9c04;
+}
+.status-inactive{
+    height:15px;
+    width: 15px;
+    background:#5f635f;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #5f635f;
+}

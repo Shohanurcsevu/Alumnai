@@ -1,0 +1,529 @@
+/*================================================================
+    Project: Medical Management
+    Author:  Pranto kumar
+    Version: 1.0.0
+=================================================================*/
+*{
+    margin: 0;
+    padding: 0
+}
+i{
+    color: #4bcffa
+}
+.clear{
+    clear: both
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    margin-bottom: 10px
+}
+a{
+    text-transform: capitalize;
+}
+form{
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+}
+th,td{
+    text-align: center
+}
+.modal-lg {
+  width: 475px;
+}
+label{
+    display: block
+}
+td{
+    padding: 3px !important
+}
+.margin-top{
+    margin-top: 20px
+}
+/*Header top area CSS*/
+.header-top-area{
+    background: #30336b;
+    overflow: hidden
+}
+.header-top-area .header-top{
+    padding: 0px 10px
+}
+.header-top a i{
+    margin-right: 10px
+}
+.header-top a, .m-main-menu a {
+  color: #eee;
+  font-weight: 900;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+.header-top a:hover{
+    background: #130f40
+}
+/*Theme areaarea CSS*/
+.m-theme-area{
+    width: 100%;
+    height: auto;
+}
+.m-theme-area .m-main-menu{
+    width: 20%;
+    height: 94vh;
+    float: left;
+    background: #130f40;
+    padding-left: 10px
+}
+.m-main-menu a i{
+    margin-right: 10px;
+}
+.m-main-menu a {
+  border-bottom: 1px solid #30336b;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0 10px 10px;
+  text-transform: capitalize;
+  transition: all 0.4s ease-in 0s;
+}
+.m-main-menu a:hover{
+    padding-left: 15px;
+    background: #fff;
+    color: #130f40
+}
+.m-theme-area .m-main-area-start {
+  float: left;
+  height: 93vh;
+  width: 80%;
+}
+.m-title-area{
+  background: #ccc;
+  padding: 10px;
+}
+.m-title-area h4, .m-title-area h4 i {
+    color: #ffffff!important;
+    padding:5px;
+    margin:0 5px;
+}
+.m-theme-area h4{
+  background-clip: text;
+  background-color: #565656;
+  color: transparent;
+  font: bold 14px arial,sans-serif;
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+/*Single part area CSS*/
+.single-part-area {
+  padding: 10px;
+  width: 100%;
+}
+.single-part {
+  border-radius: 5px;
+  box-shadow: -1px 5px 25px 0 rgba(0, 0, 0, 0.17);
+  display: table;
+  float: left;
+  height: 30vh;
+  margin: 25px 10px;
+  transition: all 0.2s ease-out 0s;
+  width: 23.1%;
+}
+.single-part:hover {
+  box-shadow: -1px 5px 25px 0 rgba(0, 0, 0, 0.29);
+}
+.single {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.single a > i {
+  background: #F79F1F none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 14px;
+}
+.single a > i.green{
+    background: green
+}
+.single a > i.red{
+    background: #ED4C67
+}
+.single a > i.yellow{
+    background: #30336b
+}
+.single a > i.glass-green{
+    background: #22a6b3
+}
+.single a > i.pink{
+    background: #be2edd
+}
+.single a > i.blur{
+    background: #f9ca24
+}
+.single a > i.blue{
+    background: #0652DD
+}
+
+.single > a {
+  font-size: 12px;
+  text-decoration: underline;
+  text-transform: none;
+}
+footer {
+  background: #30336b none repeat scroll 0 0;
+  color: #fff;
+  float: left;
+  overflow: hidden;
+  padding-top: 7px;
+  text-align: center;
+  width: 100%;
+}
+.date-area > h4 {
+  margin-bottom: 0;
+  padding-top: 10px;
+  text-align: center;
+}
+/*Table CSS*/
+.daily-table{
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto
+}
+.daily-doctor-table {
+  height: 73vh;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: auto;
+}
+table{
+    margin-top: 10px;
+}
+ table th.something{ 
+     table-layout: auto;
+     overflow: hidden; 
+}
+.daily-doctor-table thead tr .th-width{
+    width: 120px
+}
+.daily-table a>i, .test-form button i{
+    color: #fff;
+    margin-right: 5px
+}
+/*Add test Modal Form*/
+.test-head{
+    padding: 10px ;
+    background: #130F40;
+    color: #fff
+}
+.test-head h4{
+    margin-bottom: 0px
+}
+.test-form button{
+    margin-top: 20px
+}
+.modal-form-footer {
+  background: #130F40 none repeat scroll 0 0;
+  color: #fff;
+  padding: 10px;
+    margin-top: 30px
+}
+.modal-form-footer p{
+    margin-bottom: 0
+}
+
+/*All Tests List*/
+.overlay {
+  position: relative;
+}
+.overlay a {
+  margin: 0 8px;
+}
+.overlay span {
+  background: #4cd137 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  padding: 0 5px;
+  position: absolute;
+  right: 48.7%;
+}
+/*Patient area CSS*/
+.patient-area-start, .add-invoce {
+    background: #eee none repeat scroll 0 0;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 5px 0 10px;
+    width: 95%;
+}
+.patient-area .p-id, .patient-area .p-date{
+    width: 50%;
+    float: left;
+    text-align: left
+}
+.patient-area .p-date{
+    text-align: right
+}
+ strong{
+    display: inline;
+     margin: 5px
+}
+.add-invoce{
+    height: 64vh
+}
+.add-invoce form label{
+    display: inline
+}
+.add-invoce form input{
+    width: 350px;
+    margin-bottom: 20px
+}
+.add-invoce form input.patient-input, .add-invoce form input.patient-age, .add-invoce form input.patient-rfd{
+    width: 40%;
+    border-radius: 15px;
+    border: 0;
+    padding: 5px 20px;
+    margin-right: 10%
+}
+.add-invoce form select{
+    margin-right: 13%
+}
+.add-invoce form input.patient-age{
+    width: 10%;
+    margin: 0
+}
+.add-invoce form select {
+    border: 0 none;
+    margin-right: 13%;
+    padding: 5px 0;
+}
+.add-invoce form input.patient-rfd {
+    margin-right: 0;
+    width: 31.7%;
+}
+.add-invoce form input[type="submit"], .add-invoce form input[type="reset"], .add-test form button.add-btn{
+    margin-left: 11%;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px 20px;
+    background: #30336B;
+    text-transform: capitalize;
+    font-weight: 700;
+    width: 120px;
+    color: #fff;
+    transition: 0.2s ease-in
+}
+.add-invoce form input[type="submit"]:hover, .add-test form button.add-btn:hover{
+    background: #130F40
+}
+.add-invoce form input[type="reset"]:hover{
+    background: #BE2EDD
+}
+.add-invoce form input[type="reset"]{
+    background: #ED4C67
+}
+.p-rules, .p-rfd {
+    float: left;
+    padding: 0 25px;
+    width: 50%;
+}
+.p-rules ul li{
+    margin-bottom: 5px;
+    padding: 5px
+}
+.p-id span, .p-date span {
+    display: block;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.p-id > strong span{
+    display: inline
+}
+.add-invoce .add-test, .add-invoce .test-amount{
+    width: 48%;
+    float: left;
+    margin: 0% 1%;
+    height: 100%;
+    box-shadow: -1px 5px 25px 0 rgba(0, 0, 0, 0.17);
+    overflow-y: auto
+}
+.add-invoce .test-amount{
+    padding: 10px
+}
+.add-invoce .add-test form{
+    position: relative
+}
+.add-test form label, .add-test form input{
+    display: inline
+}
+.add-test form label{
+    margin-right: 10px
+}
+.add-test form input {
+    margin-right: 29px;
+    width: auto;
+}
+.add-test form input[type="text"]{
+    width: 90%
+}
+.add-test form input[type="text"] {
+    border: 0 none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    width: 90%;
+}
+.add-test form button.s-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    border: 0 none;
+    font-size: 20px;
+    padding: 0;
+    position: absolute;
+    right: 14%;
+}
+.add-test form button i{
+    color: #ccc
+}
+.test-amount table thead tr {
+    font-size: 12px;
+}
+.test-amount table tr td a i {
+    color: red;
+    padding: 3px 15px;
+}
+.add-test form button.add-btn{
+    margin-left: 2px
+}
+.add-test form button.add-btn i{
+    margin-right: 10px
+}
+
+
+/* Status Switch CSS*/
+.switch {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 34px;
+    margin-top: 20px;
+}
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.add-test {
+    padding: 10px;
+}
+.p-amount form table {
+    text-align: center;
+    width: 100%;
+}
+.p-amount table input.gen-input {
+    margin-bottom: 0;
+    padding: 3px 10px;
+    width: 77px;
+}
+.p-amount form table td {
+    text-align: right;
+}
+.p-amount form input.rfd-input {
+    margin-bottom: 0;
+    width: 80%;
+}
+
+
+/*Login Area CSS*/
+.login-area-start{
+    width: 100%;
+    height: 100vh;
+    background-image:url(img/medical1.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover
+}
+.login-area{
+    width: 100%;
+    height: auto;
+}
+.login-area .login-form{
+    width: 30%;
+    margin: 30vh auto;
+    height: 40vh;
+    background: #fff;
+    border-radius: 5px
+}
+.login-area .login-form h4 {
+    background: #00acd2 none repeat scroll 0 0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+span.pass-eye {
+    position: absolute;
+    right: 39%;
+    top: 51%;
+}
+/*
+COLOR :#30336b
+HOVER: #130f40
+*/
+
+/* add post modal style */
+.custom_modal .modal-dialog {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.custom_modal .modal-content {
+  height: auto;
+  max-height: 100%;
+  border-radius: 0;
+  padding: 10px;
+}
